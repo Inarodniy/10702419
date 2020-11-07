@@ -1,0 +1,1 @@
+My project using .net core + react + much more
