@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" type="text/css" href="index.css">
+<script type="text/javascript" src="Lib.js"></script>
+
+<head>
+    <title>Fingerpainting</title>
+</head>
+
+<body style="margin: 0px;">
+    <div class="picker" id="primary_block">
+        <div id="line">
+            <div id="arrows">
+                <div class="left_arrow"></div>
+                <div class="right_arrow"></div>
+            </div>
+        </div>
+        <div id="block_picker">
+
+            <img src="https://lh3.googleusercontent.com/-8Dm4nhAOssQ/T_IqwyIFXmI/AAAAAAAAACA/4QKmS7s_otE/s256/bgGradient.png"
+                class="bk_img">
+            <div class="circle" id="circle"></div>
+        </div>
+        <div id="out_color" class="out_color"></div>
+        <div>
+            <input type="range" id="range" min="0" max="100" step="1" value="50">
+        </div>
+        <div style="background-color: azure;">
+            <input type="radio" id="circleBrush" name="brush" value="circle">
+            <label for="circleBrush">circle</label><br>
+            <input type="radio" id="triangle" name="brush" value="triangle">
+            <label for="triangle">triangle</label><br>
+            <input type="radio" id="square" name="brush" value="square">
+            <label for="square">square</label>
+        </div>
+    </div>
+    <canvas id="canvas" />
+    <script src="script.js"></script>
+    <script type="text/javascript">
+        picker.init();
+    </script>
+</body>
+
+</html>
