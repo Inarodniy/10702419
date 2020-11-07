@@ -1,0 +1,123 @@
+body {
+    width: 100vw;
+    max-width: 100vw !important;
+    margin: 0px;
+}
+
+.head {
+    position: absolute;
+    background-color: rgb(60, 60, 62);
+    height: 250px;
+    width: 100%;
+    z-index: 2;
+}
+
+.round {
+    border-radius: 10px;
+}
+
+.image {
+    width: 250px;
+    height: 250px;
+    margin-top: 125px;
+    margin-left: -10%;
+    z-index: 5;
+}
+
+.head-text {
+    margin-top: 140px;
+}
+
+.col {
+    z-index: 99;
+}
+
+.border {
+    margin-left: 20px;
+    margin-right: 20px;
+    border-right: 2px solid rgb(208, 208, 208);
+}
+
+.name {
+    color: rgb(216, 216, 217);
+    font-family: system-ui;
+    font-weight: 350;
+    font-size: 35px;
+    line-height: 40px;
+}
+
+.profession {
+    color: rgb(124, 124, 126);
+    font-family: system-ui;
+    font-weight: 150;
+    font-stretch: expanded;
+    font-size: 25px;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 30% 5% 50%;
+    margin-bottom: 30px;
+}
+
+.personal_wrp {
+    display: grid;
+    grid-template-columns: 40% 10% 50%;
+    padding-bottom: 40px;
+    border-bottom: 2px solid rgb(208, 208, 208);
+}
+
+.skills_wrp {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding-bottom: 40px;
+    border-bottom: 2px solid rgb(208, 208, 208);
+}
+
+.title {
+    color: rgb(71, 168, 229);
+    font-family: system-ui;
+    font-weight: 650;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.text {
+    font-family: system-ui;
+    font-size: 0.9rem;
+    text-align: justify;
+    color: rgb(105, 105, 105);
+}
+
+.meter {
+    margin-top: 7px;
+    height: 6px;
+    position: relative;
+    background: rgb(173, 173, 173);
+}
+
+.meter>span {
+    display: block;
+    height: 100%;
+    background-color: rgb(60, 60, 62);
+    position: relative;
+    overflow: hidden;
+}
+
+.contact_wrp {
+    display: grid;
+    grid-template-columns: 20% 50%;
+    padding-bottom: 40px;
+    border-bottom: 2px solid rgb(208, 208, 208);
+}
+
+.education_wrp {
+    display: grid;
+    grid-template-columns: 40% 20% 40%;
+    padding-bottom: 40px;
+    border-bottom: 2px solid rgb(208, 208, 208);
+}
+.experience_wrp {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
