@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Fingerpainting</title>
+</head>
+<!-- the inline CSS on the body ("margin: 0px;") removes the extra space
+    around the canvas, making it flush with the edge of the page -->
+<body style="margin: 0px;">
+    <script src="jscolor.js"></script>
+    <script>
+        jscolor.presets.default = {
+            format:'hex'
+        };
+        </script>
+    
+    <form name="menu">
+        <input type="text" id="only_num" value="" placeholder="Введите размер кисти" />
+        <input data-jscolor=""  id="color_picker" onblur="colorOnBlur()" placeholder="Выберите цвет">
+        <select name="town" id="list1" onblur="shapeOnBlur()">
+            <option value="circle" >Круг</option>
+            <option value="square">Квадрат</option>
+          </select>
+    </form>
+    <div id="printBlock"></div>
+ <canvas id="canvas"/>
+ <script src="script.js"></script>
+ 
+
+
+
+</body>
+</html>
